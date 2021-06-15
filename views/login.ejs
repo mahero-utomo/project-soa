@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ApiMedic - Login</title>
+    <link href="/img/Medical Check Up Icons.png" rel="icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/LoginRegister.css">
+    <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <h1>ApiMedic</h1>
+    <div class="form-input login">
+        <form action="/developer/login" method="post">
+            <i class="fa fa-heartbeat"></i>
+            <h2>Login</h2>
+            <div class="group">
+                <input type="text" name="email" placeholder="Email">
+                <i class="fa fa-envelope"></i>
+                <% if (typeof errorResult != 'undefined' && errorResult.email) { %>
+                    <label for=""><%= errorResult.email %></label>
+                <% } %>
+            </div>
+            <div class="group">
+                <input type="password" name="password" placeholder="Password">
+                <i class="fa fa-lock"></i>
+                <% if (typeof errorResult != 'undefined' && errorResult.password) { %>
+                    <label for=""><%= errorResult.password %></label>
+                <% } %>
+            </div>
+            <button><i class="fa fa-send"></i> Login</button>
+            <p class="fs">Forgot <a href="#">Email</a> or <a href="">Password</a> ? </p>
+            <p class="ss">Don't have an account ? <a href="/register">Sign up</a></p>
+        </form>
+        <% if(typeof message != 'undefined' && message) { %>
+            <style>
+                .form-input {
+                    top: 20px;
+                }
+
+                div.alert.alert-success {
+                    top: inherit;
+                }
+            </style>
+            <div class="alert alert-success">
+                <%= message %>
+            </div>
+        <% } %>
+    </div>
+</body>
+</html>

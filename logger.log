@@ -1,0 +1,156 @@
+Method:GET; URL:/; Status:200; Message: OK; DateTime: 10/06/2021; ResponseTime: 114 ms
+Method:GET; URL:/login; Status:200; Message: OK; DateTime: 10/06/2021; ResponseTime: 1 ms
+Method:GET; URL:/register; Status:500; Message: Internal Server Error; DateTime: 10/06/2021; ResponseTime: 19 ms
+Method:GET; URL:/favicon.ico; Status:404; Message: Not Found; DateTime: 10/06/2021; ResponseTime: 1 ms
+Method:GET; URL:/register; Status:500; Message: Internal Server Error; DateTime: 10/06/2021; ResponseTime: 1 ms
+Method:GET; URL:/register; Status:500; Message: Internal Server Error; DateTime: 10/06/2021; ResponseTime: 15 ms
+Method:GET; URL:/register; Status:500; Message: Internal Server Error; DateTime: 10/06/2021; ResponseTime: 1 ms
+Method:GET; URL:/register; Status:200; Message: OK; DateTime: 10/06/2021; ResponseTime: 12 ms
+Method:GET; URL:/register; Status:500; Message: Internal Server Error; DateTime: 10/06/2021; ResponseTime: 29 ms
+Method:GET; URL:/register; Status:500; Message: Internal Server Error; DateTime: 10/06/2021; ResponseTime: 2 ms
+Method:GET; URL:/register; Status:500; Message: Internal Server Error; DateTime: 10/06/2021; ResponseTime: 28 ms
+Method:GET; URL:/register; Status:200; Message: OK; DateTime: 10/06/2021; ResponseTime: 29 ms
+Method:GET; URL:/register; Status:304; Message: Not Modified; DateTime: 10/06/2021; ResponseTime: 2 ms
+Method:GET; URL:/; Status:200; Message: OK; DateTime: 10/06/2021; ResponseTime: 5 ms
+Method:GET; URL:/login'; Status:404; Message: Not Found; DateTime: 10/06/2021; ResponseTime: 1 ms
+Method:GET; URL:/login; Status:200; Message: OK; DateTime: 10/06/2021; ResponseTime: 19 ms
+Method:GET; URL:/register; Status:200; Message: OK; DateTime: 10/06/2021; ResponseTime: 1 ms
+Method:POST; URL:/developer/register; Status:undefined; Message: undefined; DateTime: 10/06/2021; ResponseTime: NaN ms
+Method:POST; URL:/developer/register; Status:undefined; Message: undefined; DateTime: 10/06/2021; ResponseTime: NaN ms
+Method:GET; URL:/login; Status:200; Message: OK; DateTime: 10/06/2021; ResponseTime: 1 ms
+Method:GET; URL:/register; Status:304; Message: Not Modified; DateTime: 10/06/2021; ResponseTime: 16 ms
+Method:GET; URL:/developer/register; Status:404; Message: Not Found; DateTime: 10/06/2021; ResponseTime: 3 ms
+Method:GET; URL:/register; Status:304; Message: Not Modified; DateTime: 10/06/2021; ResponseTime: 14 ms
+Method:GET; URL:/developer/register; Status:404; Message: Not Found; DateTime: 10/06/2021; ResponseTime: 3 ms
+Method:GET; URL:/register; Status:304; Message: Not Modified; DateTime: 10/06/2021; ResponseTime: 13 ms
+Method:GET; URL:/register; Status:200; Message: OK; DateTime: 10/06/2021; ResponseTime: 39 ms
+Method:POST; URL:/developer/register; Status:200; Message: OK; DateTime: 10/06/2021; ResponseTime: 238 ms
+Method:GET; URL:/developer/register; Status:404; Message: Not Found; DateTime: 10/06/2021; ResponseTime: 1 ms
+Method:GET; URL:/register; Status:304; Message: Not Modified; DateTime: 10/06/2021; ResponseTime: 14 ms
+Method:POST; URL:/developer/register; Status:200; Message: OK; DateTime: 10/06/2021; ResponseTime: 38 ms
+Method:GET; URL:/register; Status:304; Message: Not Modified; DateTime: 10/06/2021; ResponseTime: 18 ms
+Method:POST; URL:/developer/register; Status:200; Message: OK; DateTime: 10/06/2021; ResponseTime: 40 ms
+Method:GET; URL:/register; Status:304; Message: Not Modified; DateTime: 10/06/2021; ResponseTime: 16 ms
+Method:POST; URL:/developer/register; Status:200; Message: OK; DateTime: 10/06/2021; ResponseTime: 45 ms
+Method:GET; URL:/register; Status:200; Message: OK; DateTime: 10/06/2021; ResponseTime: 1 ms
+Method:GET; URL:/register; Status:304; Message: Not Modified; DateTime: 10/06/2021; ResponseTime: 1 ms
+Method:GET; URL:/register; Status:200; Message: OK; DateTime: 10/06/2021; ResponseTime: 43 ms
+Method:POST; URL:/developer/register; Status:200; Message: OK; DateTime: 10/06/2021; ResponseTime: 41 ms
+Method:POST; URL:/developer/register; Status:200; Message: OK; DateTime: 10/06/2021; ResponseTime: 10 ms
+Method:POST; URL:/developer/register; Status:200; Message: OK; DateTime: 10/06/2021; ResponseTime: 4 ms
+Method:GET; URL:/developer/register; Status:404; Message: Not Found; DateTime: 10/06/2021; ResponseTime: 3 ms
+Method:GET; URL:/register; Status:304; Message: Not Modified; DateTime: 10/06/2021; ResponseTime: 12 ms
+Method:POST; URL:/developer/register; Status:200; Message: OK; DateTime: 10/06/2021; ResponseTime: 42 ms
+Method:POST; URL:/developer/register; Status:200; Message: OK; DateTime: 10/06/2021; ResponseTime: 40 ms
+Method:POST; URL:/developer/register; Status:200; Message: OK; DateTime: 10/06/2021; ResponseTime: 61 ms
+Method:GET; URL:/register; Status:200; Message: OK; DateTime: 10/06/2021; ResponseTime: 2 ms
+Method:GET; URL:/register; Status:304; Message: Not Modified; DateTime: 10/06/2021; ResponseTime: 1 ms
+Method:GET; URL:/register; Status:200; Message: OK; DateTime: 10/06/2021; ResponseTime: 14 ms
+Method:POST; URL:/developer/register; Status:200; Message: OK; DateTime: 10/06/2021; ResponseTime: 43 ms
+Method:GET; URL:/register; Status:304; Message: Not Modified; DateTime: 10/06/2021; ResponseTime: 12 ms
+Method:POST; URL:/developer/register; Status:undefined; Message: undefined; DateTime: 10/06/2021; ResponseTime: NaN ms
+Method:GET; URL:/register; Status:304; Message: Not Modified; DateTime: 10/06/2021; ResponseTime: 2 ms
+Method:GET; URL:/register; Status:304; Message: Not Modified; DateTime: 10/06/2021; ResponseTime: 13 ms
+Method:POST; URL:/developer/register; Status:200; Message: OK; DateTime: 10/06/2021; ResponseTime: 55 ms
+Method:GET; URL:/register; Status:304; Message: Not Modified; DateTime: 10/06/2021; ResponseTime: 2 ms
+Method:GET; URL:/register; Status:304; Message: Not Modified; DateTime: 10/06/2021; ResponseTime: 13 ms
+Method:POST; URL:/developer/register; Status:200; Message: OK; DateTime: 10/06/2021; ResponseTime: 41 ms
+Method:POST; URL:/developer/register; Status:200; Message: OK; DateTime: 10/06/2021; ResponseTime: 12 ms
+Method:POST; URL:/developer/register; Status:200; Message: OK; DateTime: 10/06/2021; ResponseTime: 8 ms
+Method:GET; URL:/register; Status:304; Message: Not Modified; DateTime: 10/06/2021; ResponseTime: 14 ms
+Method:POST; URL:/developer/register; Status:200; Message: OK; DateTime: 10/06/2021; ResponseTime: 53 ms
+Method:GET; URL:/register; Status:304; Message: Not Modified; DateTime: 10/06/2021; ResponseTime: 2 ms
+Method:GET; URL:/register; Status:304; Message: Not Modified; DateTime: 10/06/2021; ResponseTime: 16 ms
+Method:GET; URL:/register; Status:304; Message: Not Modified; DateTime: 10/06/2021; ResponseTime: 14 ms
+Method:POST; URL:/developer/register; Status:200; Message: OK; DateTime: 10/06/2021; ResponseTime: 9 ms
+Method:POST; URL:/developer/register; Status:200; Message: OK; DateTime: 10/06/2021; ResponseTime: 44 ms
+Method:POST; URL:/developer/register; Status:200; Message: OK; DateTime: 10/06/2021; ResponseTime: 8 ms
+Method:POST; URL:/developer/register; Status:200; Message: OK; DateTime: 10/06/2021; ResponseTime: 11 ms
+Method:GET; URL:/; Status:304; Message: Not Modified; DateTime: 10/06/2021; ResponseTime: 15 ms
+Method:GET; URL:/register; Status:200; Message: OK; DateTime: 10/06/2021; ResponseTime: 2 ms
+Method:POST; URL:/developer/register; Status:200; Message: OK; DateTime: 10/06/2021; ResponseTime: 59 ms
+Method:GET; URL:/register; Status:304; Message: Not Modified; DateTime: 10/06/2021; ResponseTime: 17 ms
+Method:POST; URL:/developer/register; Status:200; Message: OK; DateTime: 10/06/2021; ResponseTime: 68 ms
+Method:GET; URL://register; Status:404; Message: Not Found; DateTime: 10/06/2021; ResponseTime: 3 ms
+Method:GET; URL:/register; Status:304; Message: Not Modified; DateTime: 10/06/2021; ResponseTime: 13 ms
+Method:POST; URL:/developer/register; Status:200; Message: OK; DateTime: 10/06/2021; ResponseTime: 56 ms
+Method:GET; URL:/register; Status:304; Message: Not Modified; DateTime: 10/06/2021; ResponseTime: 14 ms
+Method:POST; URL:/developer/register; Status:500; Message: Internal Server Error; DateTime: 10/06/2021; ResponseTime: 59 ms
+Method:GET; URL:/register; Status:304; Message: Not Modified; DateTime: 10/06/2021; ResponseTime: 223 ms
+Method:GET; URL:/register; Status:304; Message: Not Modified; DateTime: 10/06/2021; ResponseTime: 15 ms
+Method:POST; URL:/developer/register; Status:200; Message: OK; DateTime: 10/06/2021; ResponseTime: 39 ms
+Method:GET; URL:/developer/register; Status:404; Message: Not Found; DateTime: 10/06/2021; ResponseTime: 3 ms
+Method:GET; URL:/register; Status:304; Message: Not Modified; DateTime: 10/06/2021; ResponseTime: 13 ms
+Method:GET; URL:/register; Status:304; Message: Not Modified; DateTime: 10/06/2021; ResponseTime: 13 ms
+Method:GET; URL:/register; Status:304; Message: Not Modified; DateTime: 10/06/2021; ResponseTime: 12 ms
+Method:GET; URL:/register; Status:304; Message: Not Modified; DateTime: 10/06/2021; ResponseTime: 15 ms
+Method:GET; URL:/register; Status:304; Message: Not Modified; DateTime: 10/06/2021; ResponseTime: 13 ms
+Method:GET; URL:/register; Status:304; Message: Not Modified; DateTime: 10/06/2021; ResponseTime: 13 ms
+Method:GET; URL:/register; Status:304; Message: Not Modified; DateTime: 10/06/2021; ResponseTime: 12 ms
+Method:GET; URL:/register; Status:304; Message: Not Modified; DateTime: 10/06/2021; ResponseTime: 14 ms
+Method:GET; URL:/register; Status:304; Message: Not Modified; DateTime: 10/06/2021; ResponseTime: 12 ms
+Method:GET; URL:/register; Status:304; Message: Not Modified; DateTime: 10/06/2021; ResponseTime: 75 ms
+Method:POST; URL:/developer/register; Status:200; Message: OK; DateTime: 10/06/2021; ResponseTime: 232 ms
+Method:GET; URL:/login; Status:200; Message: OK; DateTime: 10/06/2021; ResponseTime: 20 ms
+Method:POST; URL:/developer/login; Status:200; Message: OK; DateTime: 10/06/2021; ResponseTime: 5 ms
+Method:GET; URL:/register; Status:304; Message: Not Modified; DateTime: 10/06/2021; ResponseTime: 12 ms
+Method:POST; URL:/developer/register; Status:200; Message: OK; DateTime: 10/06/2021; ResponseTime: 172 ms
+Method:POST; URL:/developer/login; Status:200; Message: OK; DateTime: 10/06/2021; ResponseTime: 4 ms
+Method:POST; URL:/developer/login; Status:200; Message: OK; DateTime: 10/06/2021; ResponseTime: 22 ms
+Method:GET; URL:/register; Status:200; Message: OK; DateTime: 10/06/2021; ResponseTime: 1 ms
+Method:POST; URL:/developer/register; Status:200; Message: OK; DateTime: 10/06/2021; ResponseTime: 114 ms
+Method:POST; URL:/developer/login; Status:200; Message: OK; DateTime: 10/06/2021; ResponseTime: 3 ms
+Method:GET; URL:/login; Status:200; Message: OK; DateTime: 10/06/2021; ResponseTime: 39 ms
+Method:POST; URL:/developer/login; Status:200; Message: OK; DateTime: 10/06/2021; ResponseTime: 38 ms
+Method:POST; URL:/developer/login; Status:200; Message: OK; DateTime: 10/06/2021; ResponseTime: 1 ms
+Method:GET; URL:/login; Status:304; Message: Not Modified; DateTime: 10/06/2021; ResponseTime: 16 ms
+Method:GET; URL:/login; Status:304; Message: Not Modified; DateTime: 10/06/2021; ResponseTime: 12 ms
+Method:GET; URL:/login; Status:304; Message: Not Modified; DateTime: 10/06/2021; ResponseTime: 18 ms
+Method:GET; URL:/login; Status:200; Message: OK; DateTime: 10/06/2021; ResponseTime: 1 ms
+Method:GET; URL:/login; Status:304; Message: Not Modified; DateTime: 10/06/2021; ResponseTime: 15 ms
+Method:GET; URL:/login; Status:304; Message: Not Modified; DateTime: 10/06/2021; ResponseTime: 17 ms
+Method:GET; URL:/login; Status:304; Message: Not Modified; DateTime: 10/06/2021; ResponseTime: 14 ms
+Method:POST; URL:/developer/login; Status:200; Message: OK; DateTime: 10/06/2021; ResponseTime: 172 ms
+Method:GET; URL:/login; Status:304; Message: Not Modified; DateTime: 10/06/2021; ResponseTime: 14 ms
+Method:GET; URL:/login; Status:200; Message: OK; DateTime: 10/06/2021; ResponseTime: 1 ms
+Method:POST; URL:/developer/login; Status:200; Message: OK; DateTime: 10/06/2021; ResponseTime: 175 ms
+Method:POST; URL:/developer/login; Status:200; Message: OK; DateTime: 10/06/2021; ResponseTime: 105 ms
+Method:GET; URL:/login; Status:200; Message: OK; DateTime: 10/06/2021; ResponseTime: 14 ms
+Method:POST; URL:/developer/login; Status:200; Message: OK; DateTime: 10/06/2021; ResponseTime: 179 ms
+Method:GET; URL:/login; Status:304; Message: Not Modified; DateTime: 10/06/2021; ResponseTime: 15 ms
+Method:POST; URL:/developer/login; Status:200; Message: OK; DateTime: 10/06/2021; ResponseTime: 177 ms
+Method:POST; URL:/developer/login; Status:200; Message: OK; DateTime: 10/06/2021; ResponseTime: 5 ms
+Method:GET; URL:/login; Status:500; Message: Internal Server Error; DateTime: 10/06/2021; ResponseTime: 179 ms
+Method:GET; URL:/login; Status:200; Message: OK; DateTime: 10/06/2021; ResponseTime: 38 ms
+Method:GET; URL:/register; Status:200; Message: OK; DateTime: 10/06/2021; ResponseTime: 29 ms
+Method:GET; URL:/register; Status:304; Message: Not Modified; DateTime: 10/06/2021; ResponseTime: 1 ms
+Method:POST; URL:/developer/register; Status:200; Message: OK; DateTime: 10/06/2021; ResponseTime: 211 ms
+Method:GET; URL:/developer/register; Status:404; Message: Not Found; DateTime: 10/06/2021; ResponseTime: 1 ms
+Method:GET; URL:/login; Status:200; Message: OK; DateTime: 10/06/2021; ResponseTime: 32 ms
+Method:GET; URL:/login; Status:200; Message: OK; DateTime: 10/06/2021; ResponseTime: 1 ms
+Method:GET; URL:/register; Status:304; Message: Not Modified; DateTime: 10/06/2021; ResponseTime: 1 ms
+Method:GET; URL:/register; Status:200; Message: OK; DateTime: 10/06/2021; ResponseTime: 1 ms
+Method:GET; URL:/; Status:200; Message: OK; DateTime: 10/06/2021; ResponseTime: 136 ms
+Method:GET; URL:/register; Status:304; Message: Not Modified; DateTime: 10/06/2021; ResponseTime: 14 ms
+Method:POST; URL:/developer/register; Status:200; Message: OK; DateTime: 10/06/2021; ResponseTime: 180 ms
+Method:GET; URL:/register; Status:200; Message: OK; DateTime: 10/06/2021; ResponseTime: 15 ms
+Method:POST; URL:/developer/register; Status:200; Message: OK; DateTime: 10/06/2021; ResponseTime: 37 ms
+Method:POST; URL:/developer/register; Status:200; Message: OK; DateTime: 10/06/2021; ResponseTime: 148 ms
+Method:GET; URL:/login; Status:200; Message: OK; DateTime: 10/06/2021; ResponseTime: 27 ms
+Method:GET; URL:/register; Status:200; Message: OK; DateTime: 10/06/2021; ResponseTime: 5 ms
+Method:GET; URL:/; Status:500; Message: Internal Server Error; DateTime: 15/06/2021; ResponseTime: 229 ms
+Method:GET; URL:/; Status:500; Message: Internal Server Error; DateTime: 15/06/2021; ResponseTime: 28 ms
+Method:GET; URL:/developer/register; Status:404; Message: Not Found; DateTime: 15/06/2021; ResponseTime: 1 ms
+Method:GET; URL:/; Status:500; Message: Internal Server Error; DateTime: 15/06/2021; ResponseTime: 34 ms
+Method:GET; URL:/; Status:500; Message: Internal Server Error; DateTime: 15/06/2021; ResponseTime: 23 ms
+Method:GET; URL:/; Status:500; Message: Internal Server Error; DateTime: 15/06/2021; ResponseTime: 18 ms
+Method:GET; URL:/; Status:500; Message: Internal Server Error; DateTime: 15/06/2021; ResponseTime: 3 ms
+Method:GET; URL:/; Status:500; Message: Internal Server Error; DateTime: 15/06/2021; ResponseTime: 5 ms
+Method:GET; URL:/; Status:500; Message: Internal Server Error; DateTime: 15/06/2021; ResponseTime: 7 ms
+Method:GET; URL:/; Status:500; Message: Internal Server Error; DateTime: 15/06/2021; ResponseTime: 7 ms
+Method:GET; URL:/; Status:500; Message: Internal Server Error; DateTime: 15/06/2021; ResponseTime: 3 ms
+Method:GET; URL:/; Status:500; Message: Internal Server Error; DateTime: 15/06/2021; ResponseTime: 4 ms
+Method:GET; URL:/; Status:200; Message: OK; DateTime: 15/06/2021; ResponseTime: 47 ms
+Method:GET; URL:/; Status:200; Message: OK; DateTime: 15/06/2021; ResponseTime: 8 ms
+Method:GET; URL://; Status:404; Message: Not Found; DateTime: 15/06/2021; ResponseTime: 3 ms
+Method:GET; URL:/; Status:304; Message: Not Modified; DateTime: 15/06/2021; ResponseTime: 6 ms
