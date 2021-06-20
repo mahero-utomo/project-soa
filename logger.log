@@ -154,3 +154,50 @@ Method:GET; URL:/; Status:200; Message: OK; DateTime: 15/06/2021; ResponseTime: 
 Method:GET; URL:/; Status:200; Message: OK; DateTime: 15/06/2021; ResponseTime: 8 ms
 Method:GET; URL://; Status:404; Message: Not Found; DateTime: 15/06/2021; ResponseTime: 3 ms
 Method:GET; URL:/; Status:304; Message: Not Modified; DateTime: 15/06/2021; ResponseTime: 6 ms
+Method:GET; URL:/; Status:200; Message: OK; DateTime: 19/06/2021; ResponseTime: 8 ms
+Method:GET; URL:/login; Status:200; Message: OK; DateTime: 19/06/2021; ResponseTime: 1 ms
+Method:GET; URL:/login; Status:304; Message: Not Modified; DateTime: 19/06/2021; ResponseTime: 0 ms
+Method:GET; URL:/login; Status:304; Message: Not Modified; DateTime: 19/06/2021; ResponseTime: 0 ms
+Method:GET; URL:/login; Status:304; Message: Not Modified; DateTime: 19/06/2021; ResponseTime: 0 ms
+Method:GET; URL:/login; Status:304; Message: Not Modified; DateTime: 19/06/2021; ResponseTime: 0 ms
+Method:GET; URL:/login; Status:304; Message: Not Modified; DateTime: 19/06/2021; ResponseTime: 0 ms
+Method:GET; URL:/login; Status:304; Message: Not Modified; DateTime: 19/06/2021; ResponseTime: 0 ms
+Method:GET; URL:/login; Status:304; Message: Not Modified; DateTime: 19/06/2021; ResponseTime: 0 ms
+Method:GET; URL:/login; Status:304; Message: Not Modified; DateTime: 19/06/2021; ResponseTime: 0 ms
+Method:GET; URL:/login; Status:304; Message: Not Modified; DateTime: 19/06/2021; ResponseTime: 1 ms
+Method:GET; URL:/login; Status:304; Message: Not Modified; DateTime: 19/06/2021; ResponseTime: 0 ms
+Method:GET; URL:/login; Status:304; Message: Not Modified; DateTime: 19/06/2021; ResponseTime: 0 ms
+Method:GET; URL:/login; Status:304; Message: Not Modified; DateTime: 19/06/2021; ResponseTime: 0 ms
+Method:GET; URL:/login; Status:304; Message: Not Modified; DateTime: 19/06/2021; ResponseTime: 0 ms
+Method:GET; URL:/login; Status:304; Message: Not Modified; DateTime: 19/06/2021; ResponseTime: 0 ms
+Method:GET; URL:/login; Status:304; Message: Not Modified; DateTime: 19/06/2021; ResponseTime: 0 ms
+Method:GET; URL:/login; Status:304; Message: Not Modified; DateTime: 19/06/2021; ResponseTime: 0 ms
+Method:GET; URL:/login; Status:304; Message: Not Modified; DateTime: 19/06/2021; ResponseTime: 0 ms
+Method:GET; URL:/login; Status:304; Message: Not Modified; DateTime: 19/06/2021; ResponseTime: 0 ms
+Method:GET; URL:/login; Status:304; Message: Not Modified; DateTime: 19/06/2021; ResponseTime: 0 ms
+Method:GET; URL:/login; Status:304; Message: Not Modified; DateTime: 19/06/2021; ResponseTime: 0 ms
+Method:GET; URL:/login; Status:304; Message: Not Modified; DateTime: 19/06/2021; ResponseTime: 0 ms
+Method:GET; URL:/login; Status:304; Message: Not Modified; DateTime: 19/06/2021; ResponseTime: 0 ms
+Method:GET; URL:/login; Status:304; Message: Not Modified; DateTime: 19/06/2021; ResponseTime: 0 ms
+Method:GET; URL:/login; Status:304; Message: Not Modified; DateTime: 19/06/2021; ResponseTime: 0 ms
+Method:GET; URL:/login; Status:304; Message: Not Modified; DateTime: 19/06/2021; ResponseTime: 0 ms
+Method:GET; URL:/login; Status:304; Message: Not Modified; DateTime: 19/06/2021; ResponseTime: 0 ms
+Method:GET; URL:/login; Status:304; Message: Not Modified; DateTime: 19/06/2021; ResponseTime: 0 ms
+Method:GET; URL:/login; Status:304; Message: Not Modified; DateTime: 19/06/2021; ResponseTime: 1 ms
+Method:GET; URL:/login; Status:304; Message: Not Modified; DateTime: 19/06/2021; ResponseTime: 0 ms
+Method:GET; URL:/login; Status:304; Message: Not Modified; DateTime: 19/06/2021; ResponseTime: 0 ms
+Method:GET; URL:/login; Status:304; Message: Not Modified; DateTime: 19/06/2021; ResponseTime: 0 ms
+Method:GET; URL:/login; Status:304; Message: Not Modified; DateTime: 19/06/2021; ResponseTime: 0 ms
+Method:GET; URL:/login; Status:304; Message: Not Modified; DateTime: 19/06/2021; ResponseTime: 0 ms
+Method:GET; URL:/login; Status:304; Message: Not Modified; DateTime: 19/06/2021; ResponseTime: 0 ms
+Method:GET; URL:/login; Status:304; Message: Not Modified; DateTime: 19/06/2021; ResponseTime: 0 ms
+Method:GET; URL:/login; Status:304; Message: Not Modified; DateTime: 19/06/2021; ResponseTime: 0 ms
+Method:GET; URL:/login; Status:304; Message: Not Modified; DateTime: 19/06/2021; ResponseTime: 0 ms
+Method:GET; URL:/login; Status:304; Message: Not Modified; DateTime: 19/06/2021; ResponseTime: 0 ms
+Method:GET; URL:/register; Status:200; Message: OK; DateTime: 19/06/2021; ResponseTime: 1 ms
+Method:GET; URL:/login; Status:304; Message: Not Modified; DateTime: 19/06/2021; ResponseTime: 0 ms
+Method:GET; URL:/register; Status:304; Message: Not Modified; DateTime: 19/06/2021; ResponseTime: 2 ms
+Method:GET; URL:/login; Status:304; Message: Not Modified; DateTime: 19/06/2021; ResponseTime: 0 ms
+Method:GET; URL:/register; Status:304; Message: Not Modified; DateTime: 19/06/2021; ResponseTime: 0 ms
+Method:GET; URL:/login; Status:304; Message: Not Modified; DateTime: 19/06/2021; ResponseTime: 0 ms
+Method:GET; URL:/register; Status:304; Message: Not Modified; DateTime: 19/06/2021; ResponseTime: 0 ms
