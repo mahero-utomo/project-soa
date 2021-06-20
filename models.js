@@ -5,6 +5,10 @@ const checkBy = async(table, by, value) => {
     return result.length
 }
 
+const changePassDev = async( email, password) => {
+    return await dbase.executeQueryWithParam(`UPDATE developer SET password=${password} WHERE email = ${email}`) 
+}
+
 const checkPassword = async(table, email, password) => {
     let result = await dbase.executeQueryWithParam(`select * from ${table} where upper(email) = upper(?) and password = ?`,[email, password])
     return result.length

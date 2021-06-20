@@ -201,3 +201,4 @@ Method:GET; URL:/login; Status:304; Message: Not Modified; DateTime: 19/06/2021;
 Method:GET; URL:/register; Status:304; Message: Not Modified; DateTime: 19/06/2021; ResponseTime: 0 ms
 Method:GET; URL:/login; Status:304; Message: Not Modified; DateTime: 19/06/2021; ResponseTime: 0 ms
 Method:GET; URL:/register; Status:304; Message: Not Modified; DateTime: 19/06/2021; ResponseTime: 0 ms
+Method:GET; URL:/; Status:304; Message: Not Modified; DateTime: 20/06/2021; ResponseTime: 64 ms

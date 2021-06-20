@@ -97,12 +97,40 @@ app.post('/developer/login', async(req, res) => {
         // console.log('login sukses')
         let token = jsonwebtoken.sign({
             email: input.email,
-        }, process.env.secret, {expiresIn: "600s"})
+        }, process.env.secret, {expiresIn: "10m"})
         res.render('index', {
             errorResult: errorResult,
         })
     }
 });
+
+app.post('/developer/login/changePassword', async(req, res) =>{
+    //belum tak cek soale gtw respond kemana tapi haruse bisa aq dah buatin model buat change password jga
+    const token = req.header("x-auth-token");
+    let user = {}
+    let input = req.body, errorResult = {}
+    if(!token){
+        errorResult.token = `token belum ada`
+    }
+    try{
+        user = jsonwebtoken.verify(token,process.env.secret);
+    }catch(err){
+        errorResult.token = `token invalid`
+    }
+    if (input.password.length < 1) {
+        errorResult.password = `field password tidak boleh kosong`
+    } else if (input.confirmPass.length < 1) {
+        errorResult.confirmPass = `field confirmation tidak boleh kosong`
+    } else if (input.password == input.confirmPass) {
+        let saltRounds = 10, hashedPassword = bcrypt.hashSync(input.password, saltRounds)
+        if (await model.changePassDev(user.email, hashedPassword)) {
+            //aku gak tahu mau respond kemana ini tinggal respond render
+        }
+    }else{
+        errorResult.confirmPass = `password dan confirmation password tidak sama`
+    }
+    
+})
 
 app.listen(port, () => {
     console.log(`Running to port ${port}`);
