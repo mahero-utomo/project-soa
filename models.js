@@ -36,6 +36,7 @@ const registerDeveloper = async(email, username, name, password) => {
 }
 
 module.exports = {
+    'changePassDev' : changePassDev,
     'checkBy' : checkBy,
     'checkPassword' : checkPassword,
     'findBy' : findBy,

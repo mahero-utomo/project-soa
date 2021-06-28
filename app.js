@@ -132,6 +132,11 @@ app.post('/developer/login/changePassword', async(req, res) =>{
     
 })
 
+// baru
+
+app.post('/user/resgiter', async(req,res)=>{
+
+})
 app.listen(port, () => {
     console.log(`Running to port ${port}`);
 });
