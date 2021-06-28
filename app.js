@@ -6,6 +6,7 @@ const model = require('./models');
 const axios = require('axios').default;
 const fs = require('fs');
 const morgan = require('morgan');
+const dbase = require("./connection")
 const request = require('request');
 // const session = require('express-session');
 app.use(express.urlencoded({extended : false}));
@@ -125,6 +126,9 @@ app.post('/developer/login/changePassword', async(req, res) =>{
         let saltRounds = 10, hashedPassword = bcrypt.hashSync(input.password, saltRounds)
         if (await model.changePassDev(user.email, hashedPassword)) {
             //aku gak tahu mau respond kemana ini tinggal respond render
+            res.render('changePassword', {
+                message:`${input.username} Ubah password berhasil`,
+            })
         }
     }else{
         errorResult.confirmPass = `password dan confirmation password tidak sama`
@@ -132,11 +136,165 @@ app.post('/developer/login/changePassword', async(req, res) =>{
     
 })
 
-// baru
+app.post('/user/register', async (req,res)=>{
+    let errorResult = {}, email = req.body.email, username = req.body.username, name = req.body.name, password = req.body.password,
+        cpass = req.body.confirm_password, no_telp = req.body.no_telp;
+    let saldo = 0;
+    let temp = req.body.tanggal_lahir.split('/');
+    let tanggal_lahir = temp[2]+"-"+temp[1]+"-"+temp[0];
+    if (email.length < 1){
+        errorResult.email = 'Field tidak boleh kosong';
+        return res.status(400).send(errorResult);
+    }else if (!await model.validateEmail(email)){
+        errorResult.email = 'Format Salah';
+        return res.status(400).send(errorResult);
+    }else if(!await model.cekDataEmail(email)){
+        errorResult.email = 'Email Sudah Terdaftar';
+        return res.status(400).send(errorResult);
+    }
+    if(username.length < 1){
+        errorResult.username = 'Field tidak boleh kosong';
+        return res.status(400).send(errorResult);
+    }
+    else if(!await model.cekDataUsername(username)){
+        errorResult.email = 'Username Sudah terdaftar';
+        return res.status(400).send(errorResult);
+    }
+    if(name.length < 1){
+        errorResult.name = 'Field tidak boleh kosong';
+        return res.status(400).send(errorResult);
+    }
+    if (password.length < 1){
+        errorResult.password = 'Field tidak boleh kosong';
+        return res.status(400).send(errorResult);
+    }
+    if (cpass.length < 1){
+        errorResult.confirm_password = 'Field tidak boleh kosong';
+        return res.status(400).send(errorResult);
+    }
+    if (password != cpass){
+        errorResult.password = 'Password dan Confirm Password tidak sama';
+        return res.status(400).send(errorResult);
+    }
+    if (isNaN(no_telp)){
+        errorResult.no_telp = 'Input wajib angka';
+        return res.status(400).send(errorResult);
+    }
+    else{
+        let saltRounds = 10, hashedPassword = bcrypt.hashSync(password, saltRounds)
+        try{
+            await model.registerUser(email, username, name, hashedPassword, tanggal_lahir, no_telp, saldo)
+            let result = {
+                "Email" : email,
+                "Username" : username,
+                "Name" : name,
+                "Tanggal Lahit" : tanggal_lahir,
+                "Nomor Telepon" : no_telp,
+                "Saldo " : "Rp "+saldo
+            }
+            return res.status(201).send(result);
+        }catch (ex) {
+            console.log(ex);
+        }
+    }
+})
 
-app.post('/user/resgiter', async(req,res)=>{
+app.post('/user/login', async (req,res)=>{
+    let result = {};
+    let email = req.body.email;
+    let password = req.body.password;
+    if (email.length < 1){
+        result = {
+            "Message" : "Email wajib diisi"
+        }
+        return res.status(400).send(result)
+    }else if(!await model.cekDataEmail(email)){
+        result = {
+            "Message" : "Email tidak terdaftar"
+        }
+        return res.status(400).send(result);
+    }
+    if (password.length < 1){
+        result = {
+            "Message" : "Password wajib diisi"
+        }
+        return res.status(400).send()
+    }
+    else{
+        try {
+            let bcryptPass = await model.getPassword("client", "email", email)
+            let user = await dbase.executeQuery(`select * from client where email = '${email}'`)
+            let username = user[0].username;
+            if (!bcrypt.compareSync(password, bcryptPass)){
+                result = {
+                    "Message" : "Password Salah"
+                }
+                return res.status(400).send(result);
+            }else{
+                let token = jsonwebtoken.sign({
+                    "email" : email,
+                    "role" : "client"
+                }, "user", {'expiresIn':'30m'});
+                result = {
+                    "Email" : email,
+                    "Username" : username,
+                    "Token" : token
+                }
+                return res.status(200).send(result);
+            }
+        }catch (e) {
+            console.log(e);
+        }
+    }
+})
+app.get('/user', async (req,res)=>{
+    let email = req.body.email;
+    let result = {};
+    let password = req.body.password;
+    let bcryptPass = await model.getPassword("client", "email", email)
+    if (email.length < 1){
+        result = {
+            "Message" : "Email wajib diisi"
+        }
+        return res.status(400).send(result)
+    }else if(!await model.cekDataEmail(email)){
+        result = {
+            "Message" : "Email tidak terdaftar"
+        }
+        return res.status(400).send(result);
+    }
+    if (password.length < 1){
+        result = {
+            "Message" : "Password wajib diisi"
+        }
+        return res.status(400).send()
+    }
+    if (!bcrypt.compareSync(password, bcryptPass)){
+        result = {
+            "Message" : "Password Salah"
+        }
+        return res.status(400).send(result);
+    }else{
+        let client = await dbase.executeQuery(`select * from client where email = '${email}'`)
+        let username = client[0].username, name = client[0].name, no_telp = client[0].no_telp, saldo = client[0].saldo;
+        let tgl = client[0].tanggal_lahir.getDate();
+        let bulan = client[0].tanggal_lahir.getMonth();
+        let tahun = client[0].tanggal_lahir.getFullYear();
+        let tanggal_lahir = tgl+"-"+bulan+"-"+tahun;
+        result = {
+            "Email" : email,
+            "Username" : username,
+            "Name" : name,
+            "Password" : password,
+            "Tanggal Lahir" : tanggal_lahir,
+            "No Telepon" : no_telp,
+            "Saldo" : "Rp "+saldo
+        }
+        return res.status(200).send(result);
+    }
 
 })
+
 app.listen(port, () => {
     console.log(`Running to port ${port}`);
 });

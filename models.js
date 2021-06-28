@@ -35,8 +35,23 @@ const registerDeveloper = async(email, username, name, password) => {
     return await dbase.executeQueryWithParam(`insert into developer values(?,?,?,?)`,[email, username, name, password])
 }
 
+const registerUser = async(email, username, name, password, tanggal_lahir, no_telp, saldo) => {
+    return await dbase.executeQuery(`insert into client values('${email}','${username}','${name}','${password}','${tanggal_lahir}','${no_telp}','${saldo}')`)
+}
+
+const cekDataEmail = async(email) =>{
+    return await dbase.executeQuery(`select * from client where email = '${email}'`);
+}
+
+const cekDataUsername = async (username) =>{
+    return await dbase.executeQuery(`select * from client where username = '${username}'`);
+}
+
+const loginClient = async (email, password) =>{
+    return await dbase.executeQuery(`select * from client where email = '${email}' and password = '${password}'`)
+}
+
 module.exports = {
-    'changePassDev' : changePassDev,
     'checkBy' : checkBy,
     'checkPassword' : checkPassword,
     'findBy' : findBy,
@@ -44,6 +59,10 @@ module.exports = {
     'validateEmail' : validateEmail,
     'validateUsername' : validateUsername,
     'registerDeveloper' : registerDeveloper,
+    'registerUser' : registerUser,
+    'cekDataEmail' : cekDataEmail,
+    'cekDataUsername' : cekDataUsername,
+    'loginClient' : loginClient
 }
 
 // const checkBy = async(by, value) => {
